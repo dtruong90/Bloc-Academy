@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+	line-height: 1.7;
+	padding: 3rem;
+    display: grid;
+}
+
+.title {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 4rem;
+	font-weight: 400;
+	color: black;
+}
+
+.title-small {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 3rem;
+	font-weight: 400;
+	color: black;
+}
+
+.paragraph {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: rgb(97, 97, 97);
+}
+
+.large-bloc {
+}
+
+.large-bloc-image {
+	width: 100%;
+	height: auto;
+}
+
+.large-bloc-bg {
+	background-color: rgb(245, 208, 0);
+	padding: 20%;
+	vertical-align: auto;
+}
+
+.small-bloc {
+    grid-column: 2fr;
+}
+
+.small-bloc-image {
+	width: 100%;
+	height: auto;
+}
+
+.small-bloc-bg {
+	background-color: rgb(230, 230, 230);
+	padding: 15%;
+	vertical-align: auto;
+}
+
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-10rem);
+	}
+
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(10rem);
+    }
+    
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.btn:link,
+.btn:visited {
+	/* text-transform: uppercase;
+	text-decoration: none;
+	padding: 1.5rem 4rem;
+	display: inline-block;
+	border-radius: 10px;
+	transition: all .2s; */
+}
+
+.btn:hover {
+	transform: translateY(-.3rem);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+	transform: translateY(-1px);
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .4)
+}
+
+.btn-white {
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: rgb(97, 97, 97);
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1rem 4rem;
+	display: inline-block;
+    transition: all .2s;
+}
+
+.btn-dark {
+	background-color: rgb(97, 97, 97);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1rem 4rem;
+	display: inline-block;
+	transition: all .2s;
+}
+
+@media (max-width: 600px) {
+	html {
+	font-size:60%;
+	}
+	body {
+		padding: 0px;
+	}
+}
